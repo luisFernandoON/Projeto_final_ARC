@@ -1,6 +1,6 @@
 Vagrant.configure("2") do |config|
   config.vm.box = "ubuntu/focal64"
-  config.vm.boot_timeout = 600
+  config.vm.boot_timeout = 600
   config.vm.network "public_network", type: "dhcp"
   config.vm.synced_folder "./ConfigsSystemBase", "/vagrant_config" #liga a pasta do sistema base com a pasta na maquina virtual
   
