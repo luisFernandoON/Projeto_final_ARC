@@ -22,7 +22,9 @@ Verifique se o serviço foi reiniciado corretamente, checando o status:
 
     sudo service isc-dhcp-server status
   
-Configuração do dhcpd.conf:
+- Configuração do dhcpd.conf:
+
+A seguir está a configuração do dhcpd
 
     ddns-update-style none;
 
