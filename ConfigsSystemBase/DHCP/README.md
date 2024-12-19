@@ -12,8 +12,6 @@ Após a instalação, edite o arquivo de configuração padrão do servidor DHCP
 
     sudo nano /etc/dhcp/dhcpd.conf
 
-- Reiniciar o Serviço DHCP
-
 Para aplicar as novas configurações, reinicie o serviço DHCP:
 
     sudo service isc-dhcp-server restart
@@ -22,9 +20,7 @@ Verifique se o serviço foi reiniciado corretamente, checando o status:
 
     sudo service isc-dhcp-server status
   
-- Configuração do dhcpd.conf:
-
-A seguir está a configuração do dhcpd
+Configuração do dhcpd.conf:
 
     ddns-update-style none;
 
