@@ -1,4 +1,4 @@
--Instalar o Servidor DHCP
+# Instalar o Servidor DHCP
 
 Primeiro, atualize os pacotes do sistema:
 
@@ -11,8 +11,6 @@ Em seguida, instale o serviço DHCP:
 Após a instalação, edite o arquivo de configuração padrão do servidor DHCP:]
 
     sudo nano /etc/dhcp/dhcpd.conf
-
--Reiniciar o Serviço DHCP
 
 Para aplicar as novas configurações, reinicie o serviço DHCP:
 
@@ -34,6 +32,6 @@ Configuração do dhcpd.conf:
     option routers 192.168.100.1;
     default-lease-time 600;
     max-lease-time 7200;
-}
+    }
 
 
