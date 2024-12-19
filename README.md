@@ -9,3 +9,7 @@ O repositório possui todas as configurações realizadas para cumprir o projeto
 # Instalação da VM e do Vagrant:
 - Vagrant Version: 2.4.3: https://developer.hashicorp.com/vagrant/install?product_intent=vagrant#windows
 - VirtualBox 7.1.4: https://www.virtualbox.org/wiki/Downloads
+
+# Clonar Repositório:
+
+-
