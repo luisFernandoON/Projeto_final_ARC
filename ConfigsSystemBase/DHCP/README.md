@@ -32,6 +32,6 @@ Configuração do dhcpd.conf:
     option routers 192.168.100.1;
     default-lease-time 600;
     max-lease-time 7200;
-}
+    }
 
 
