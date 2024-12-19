@@ -13,7 +13,7 @@ Vagrant.configure("2") do |config|
     
     sudo apt-get update
     #Instala o apache, bind9, isc-dhcp-server, nfs-kernel-server, vsftpd e samba
-    sudo apt-get install -y apache2 bind9 isc-dhcp-server nfs-kernel-server proftpd samba
+    sudo apt-get install -y apache2 bind9 isc-dhcp-server nfs-kernel-server proftpd samba smbclient
 
   #Configurando ================DHCP================
 
