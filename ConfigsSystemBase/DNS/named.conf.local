@@ -1,0 +1,5 @@
+zone "example.local" {
+    // Arquivo de zona para o domínio example.local
+    file "/etc/bind/db.example.local";  // Arquivo contendo os registros
+    type master;  // Definindo o tipo de zona como master
+};

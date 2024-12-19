@@ -1,0 +1,25 @@
+options {
+    // Diretório onde o Bind armazena o cache
+    directory "/var/cache/bind";
+
+    // Configuração para escutar em todas as interfaces IPv4
+    listen-on { any; };
+
+    // Configuração para escutar em todas as interfaces IPv6
+    listen-on-v6 { any; };
+
+    // Permitir consultas de qualquer origem
+    allow-query { any; };
+
+    // Definindo servidores DNS para encaminhamento (forwarders)
+    forwarders {
+        8.8.8.8;   // Servidor DNS do Google
+        8.8.4.4;   // Outro servidor DNS do Google
+    };
+
+    // Habilitar validação DNSSEC
+    dnssec-validation auto;
+
+    // Conformidade com RFC1035 para o comportamento de NXDOMAIN
+    auth-nxdomain no;
+};

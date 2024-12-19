@@ -1,0 +1,32 @@
+# Configuração dos daemons do NFS
+
+# Defina se deseja iniciar o daemon statd (necessário para o NFSv3 e NFSv4)
+# NÃO é necessário para sistemas de arquivos NFS sem bloqueio
+NEED_STATD=
+
+# Opções para o daemon statd (deixe vazio para valores padrão)
+STATDOPTS=
+
+# Defina se deseja iniciar o daemon idmapd (necessário para NFSv4 com nomes de usuário e grupos mapeados)
+NEED_IDMAPD=
+
+# Defina se deseja iniciar o daemon gssd (necessário para Kerberos, se configurado)
+NEED_GSSD=
+
+# Número de threads para o daemon nfsd
+RPCNFSDCOUNT=8
+
+# Prioridade do daemon nfsd (padrão é 0)
+RPCNFSDPRIORITY=0
+
+# Opções do daemon mountd (aqui configuramos a porta e o gerenciamento de GIDs)
+RPCMOUNTDOPTS="--manage-gids --port 892"
+
+# Defina se o serviço SVCGSSD deve ser iniciado (relacionado ao Kerberos)
+NEED_SVCGSSD=
+
+# Opções para o daemon svcgssd
+RPCSVCGSSDOPTS=
+
+# Porta para o serviço mountd
+MOUNTD_PORT=892
