@@ -19,9 +19,9 @@ sudo service isc-dhcp-server status
 
 Configuração do dhcpd.conf:
 
-ddns-update-style none;
+    ddns-update-style none;
 
-subnet 192.168.50.0 netmask 255.255.255.0 { 
+    subnet 192.168.50.0 netmask 255.255.255.0 {
     range 192.168.50.10 192.168.50.110; 
     option subnet-mask 255.255.255.0;
     option domain-name "ItaloLuis.com";
