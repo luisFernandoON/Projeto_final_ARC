@@ -26,12 +26,14 @@ Configuração do dhcpd.conf:
 
     ddns-update-style none;
 
-    subnet 192.168.50.0 netmask 255.255.255.0 {
-    range 192.168.50.10 192.168.50.110; 
+    subnet 192.168.100.0 netmask 255.255.255.0 {
+    range 192.168.100.10 192.168.100.110;
     option subnet-mask 255.255.255.0;
     option domain-name "ItaloLuis.com";
     option domain-name-servers 8.8.8.8, 8.8.4.4;
-    option routers 192.168.50.1;
+    option routers 192.168.100.1;
     default-lease-time 600;
     max-lease-time 7200;
-    }
+}
+
+
