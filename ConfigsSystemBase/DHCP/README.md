@@ -12,7 +12,7 @@ Após a instalação, edite o arquivo de configuração padrão do servidor DHCP
 
     sudo nano /etc/dhcp/dhcpd.conf
 
--Reiniciar o Serviço DHCP
+- Reiniciar o Serviço DHCP
 
 Para aplicar as novas configurações, reinicie o serviço DHCP:
 
